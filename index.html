@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/5b9d467701.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="card m-5">
+    <div class="card-header">
+      <h1>Payment for Example</h1>
+    </div>
+    <div class="alert alert-danger m-3 rounded">
+      Some fields are missing
+    </div>
+
+    <form class="row m-0 p-0 needs-validation">
+
+      <div class="col-md-5">
+        <label for="card" class="form-label">Card#</label>
+        <input type="number" class="form-control" placeholder="xxxxxxxxxxxxxx" id="card" aria-describedby="emailHelp">
+      </div>
+      <div class="col-md-3">
+        <label for="CVC" class="form-label">CVC#</label>
+        <input type="number" class="form-control" placeholder="0000" id="CVC" aria-describedby="emailHelp">
+      </div>
+      <div class="col-md-4">
+        <label for="Amount" class="form-label">Amount$</label>
+        <input type="text" class="form-control" placeholder="Amount" id="Amount" aria-describedby="emailHelp">
+      </div>
+
+      <div class="col-md-6 mt-1">
+        <label for="First Name" class="form-label">First Name</label>
+        <input type="text" class="form-control" placeholder="" id="First Name" aria-describedby="emailHelp">
+      </div>
+      <div class="col-md-6 mt-1">
+        <label for="Last Name" class="form-label">Last Name</label>
+        <input type="text" class="form-control" placeholder="" id="Last Name" aria-describedby="emailHelp">
+      </div>
+
+      <div class="col-md-6 mt-1">
+        <label for="City" class="form-label">City</label>
+        <input type="text" class="form-control" placeholder="" id="City" aria-describedby="emailHelp">
+      </div>
+      <div class="col-md-3 mt-1">
+        <label for="State" class="form-label">State</label>
+        <select class="form-select" id="State" baria-label="Default select example">
+          <option selected>Pick a state</option>
+          <option value="1">Málaga</option>
+          <option value="2">Sevilla</option>
+          <option value="3">Madrid</option>
+        </select>
+      </div>
+      <div class="col-md-3 mt-1">
+        <label for="Postal Code" class="form-label">Postal Code</label>
+        <input type="number" class="form-control" placeholder="" id="Postal Code" aria-describedby="emailHelp">
+      </div>
+
+      <div class="col-md-6 mt-3">
+        <label for="">We accept:</label>
+        <div class="col-md-5 mt-2 bg-secondary padLeft text-white rounded-1 p-2">
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3">
+            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4">
+            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-amex"></i></label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5 mt-3">
+        <label for="textarea">Message</label>
+        <div class="form-floating mt-1">
+          <textarea class="form-control" name="" id="textarea" cols="30" rows="8" style="height: 10vh;"></textarea>
+        </div>
+        <label class="text-color-secondary opacity-50 form-label for=">Add any notes here</label>
+      </div>
+    </form>
+    <footer>
+      <div class="bg-light d-md-flex justify-content-md-end p-4">
+        <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+        <button class="btn btn-primary" type="button">Send</button>
+      </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
